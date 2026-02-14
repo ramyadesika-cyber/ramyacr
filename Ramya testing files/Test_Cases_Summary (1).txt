@@ -1,0 +1,168 @@
+================================================================================
+CLOUDKAMPUS TEST CASES - DELIVERABLES SUMMARY
+================================================================================
+
+PROJECT: CloudKampus Educational Course Website
+DATE: December 11, 2024
+TEST CASE ID FORMAT: CK_[AREA]_###
+
+================================================================================
+DOCUMENTS CREATED
+================================================================================
+
+1. CloudKampus_TestCases_Detailed_Version.docx
+   - Contains: Detailed, granular test steps
+   - Best for: Manual testing execution, training testers
+   - Format: Every action explicitly described (e.g., "Locate field", "Click on field", "Enter value")
+
+2. CloudKampus_TestCases_Concise_Version.docx
+   - Contains: Action-oriented, brief test steps
+   - Best for: Experienced testers, quick reference
+   - Format: Concise actions (e.g., "Navigate to page", "Enter credentials", "Click Login")
+
+================================================================================
+TEST COVERAGE SUMMARY
+================================================================================
+
+TOTAL TEST CASES: 50+
+
+Functional Area 1: USER LOGIN (12 test cases)
+├─ CK_LOGIN_001 to CK_LOGIN_010: Core login functionality
+│  ├─ Positive: Valid credentials
+│  ├─ Negative: Invalid username, password, both invalid
+│  ├─ Validation: Empty fields
+│  ├─ Security: SQL injection, XSS attempts
+│  └─ UI: Password masking
+├─ CK_LOGIN_011: Session timeout verification
+└─ CK_LOGIN_012: Browser back button after logout
+
+Functional Area 2: DASHBOARD DISPLAY (3 test cases)
+├─ CK_DASH_001: Complete dashboard verification
+├─ CK_DASH_002: UI/UX alignment and styling
+└─ CK_DASH_003: Record count accuracy
+
+Functional Area 3: USER ROLE MANAGEMENT - CREATE (9 test cases)
+├─ CK_UR_001: Navigation to Manage Users
+├─ CK_UR_002: Create Admin role
+├─ CK_UR_003: Create Student role
+├─ CK_UR_004-005: Verify roles in table
+└─ CK_UR_006-009: Negative tests (duplicates, empty fields, invalid email)
+
+Functional Area 4: USER ROLE MANAGEMENT - EDIT (6 test cases)
+├─ CK_UR_010: Edit username
+├─ CK_UR_011: Edit email
+├─ CK_UR_012: Edit role (Student to Admin)
+├─ CK_UR_013: Edit multiple fields
+├─ CK_UR_014: Data persistence after refresh
+└─ CK_UR_015: Cancel edit operation
+
+Functional Area 5: COURSE MANAGEMENT (7 test cases)
+├─ CK_COURSE_001: Navigate to Manage Courses
+├─ CK_COURSE_002: Add course with all mandatory fields
+├─ CK_COURSE_003: Verify course in All Courses section
+├─ CK_COURSE_004-006: Negative tests (missing fields, duplicates)
+└─ CK_COURSE_007: Add course with image upload
+
+Functional Area 6: PUBLIC VIEW VERIFICATION (5 test cases)
+├─ CK_PUBLIC_001: Navigate Landing Page → Courses Page
+├─ CK_PUBLIC_002: Verify course visibility on public page
+├─ CK_PUBLIC_003: Verify domain categorization
+├─ CK_PUBLIC_004: Verify course count per domain
+└─ CK_PUBLIC_005: Verify public access without authentication
+
+================================================================================
+TEST DATA
+================================================================================
+
+PRIMARY CREDENTIALS:
+├─ Username: ramya
+└─ Password: Aspire#2025
+
+TEST USERS CREATED:
+├─ Admin User: admin_user01 | admin01@cloudkampus.com | Admin@2025
+└─ Student User: student_user01 | student01@cloudkampus.com | Student@2025
+
+TEST COURSE:
+├─ Title: Automation Testing Fundamentals
+├─ Domain: IT & CS (Domain ID: 21)
+└─ Duration: 40 hours
+
+================================================================================
+TEST CASE COMPONENTS (Standard Format)
+================================================================================
+
+Each test case includes:
+✓ Test Case ID (e.g., CK_LOGIN_001)
+✓ Test Case Title/Description
+✓ Priority (High/Medium/Low)
+✓ Severity (Critical/High/Medium/Low)
+✓ Preconditions
+✓ Test Steps (Detailed in Doc 1, Concise in Doc 2)
+✓ Expected Results
+
+================================================================================
+PRIORITY & SEVERITY LEVELS
+================================================================================
+
+PRIORITY:
+├─ High: Core functionality, critical business flows
+├─ Medium: Important features, data validation
+└─ Low: UI/UX enhancements, nice-to-have features
+
+SEVERITY:
+├─ Critical: System crash, data loss, security breach
+├─ High: Major functionality broken, incorrect data
+├─ Medium: Moderate impact, workarounds available
+└─ Low: Cosmetic issues, minor inconveniences
+
+================================================================================
+SECURITY TEST CASES INCLUDED
+================================================================================
+
+✓ SQL Injection Prevention (CK_LOGIN_008)
+✓ XSS (Cross-Site Scripting) Prevention (CK_LOGIN_009)
+✓ Session Management (CK_LOGIN_011)
+✓ Authentication Bypass Prevention (CK_LOGIN_012)
+✓ Password Masking (CK_LOGIN_010)
+
+================================================================================
+URLS REFERENCED
+================================================================================
+
+Admin Panel:
+├─ Login: https://learntest.xdemo.in/views/admin/login.php
+├─ Dashboard: https://learntest.xdemo.in/views/admin/dashboard.php
+├─ Manage Users: https://learntest.xdemo.in/views/admin/add_user.php
+└─ Manage Courses: https://learntest.xdemo.in/views/admin/add_course.php
+
+Public Pages:
+├─ Landing Page: https://learntest.xdemo.in/pages/landpage.php
+└─ Courses Page: https://learntest.xdemo.in/pages/courses.php
+
+================================================================================
+NOTES FOR TEST EXECUTION
+================================================================================
+
+1. Test Environment Setup:
+   - Ensure application URLs are accessible
+   - Verify test credentials are valid
+   - Use fresh browser session for each test suite
+
+2. Test Data Management:
+   - Create test users as specified
+   - Clean up test data after execution
+   - Document any deviations from expected data
+
+3. Defect Reporting:
+   - Reference Test Case ID in defect reports
+   - Attach screenshots for UI-related issues
+   - Include browser/OS information
+
+4. Regression Testing:
+   - Re-run all Critical severity test cases
+   - Focus on security test cases after any authentication changes
+   - Verify end-to-end flows after updates
+
+================================================================================
+END OF SUMMARY
+================================================================================

@@ -1,0 +1,151 @@
+{
+  "config": {
+    "configFile": "/mnt/d/PlaywrightAutomation1/playwright.config.ts",
+    "rootDir": "/mnt/d/PlaywrightAutomation1/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/mnt/d/PlaywrightAutomation1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/mnt/d/PlaywrightAutomation1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "database-upload.spec.ts",
+      "file": "database-upload.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Direct DB upload via API",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 128,
+                  "error": {
+                    "message": "Error: ENOENT: no such file or directory, open '/mnt/d/PlaywrightAutomation1/fixtures/users.csv'",
+                    "stack": "Error: ENOENT: no such file or directory, open '/mnt/d/PlaywrightAutomation1/fixtures/users.csv'\n    at /mnt/d/PlaywrightAutomation1/tests/database-upload.spec.ts:8:34",
+                    "location": {
+                      "file": "/mnt/d/PlaywrightAutomation1/tests/database-upload.spec.ts",
+                      "column": 34,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[90m// Load your data file (CSV/JSON for DB import)\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m filePath \u001b[33m=\u001b[39m resolve(\u001b[32m'fixtures/users.csv'\u001b[39m)\u001b[33m;\u001b[39m  \u001b[90m// adjust path\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mconst\u001b[39m fileBuffer \u001b[33m=\u001b[39m readFileSync(filePath)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[90m// POST the file to your API endpoint\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m'https://your-api.com/api/upload-to-db'\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/d/PlaywrightAutomation1/tests/database-upload.spec.ts",
+                        "column": 34,
+                        "line": 8
+                      },
+                      "message": "Error: ENOENT: no such file or directory, open '/mnt/d/PlaywrightAutomation1/fixtures/users.csv'\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[90m// Load your data file (CSV/JSON for DB import)\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m filePath \u001b[33m=\u001b[39m resolve(\u001b[32m'fixtures/users.csv'\u001b[39m)\u001b[33m;\u001b[39m  \u001b[90m// adjust path\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mconst\u001b[39m fileBuffer \u001b[33m=\u001b[39m readFileSync(filePath)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[90m// POST the file to your API endpoint\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m'https://your-api.com/api/upload-to-db'\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[2m    at /mnt/d/PlaywrightAutomation1/tests/database-upload.spec.ts:8:34\u001b[22m"
+                    },
+                    {
+                      "message": "Error: apiRequestContext._wrapApiCall: EPERM: operation not permitted, copyfile '/mnt/d/PlaywrightAutomation1/test-results/.playwright-artifacts-0/traces/8ba6f160bf23236ec65d-2d0a7f868a756f1c65a0.network' -> '/mnt/d/PlaywrightAutomation1/test-results/.playwright-artifacts-0/traces/8ba6f160bf23236ec65d-2d0a7f868a756f1c65a0-pwnetcopy-1.network'"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-10T08:42:33.503Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/mnt/d/PlaywrightAutomation1/test-results/database-upload-Direct-DB-upload-via-API-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/d/PlaywrightAutomation1/tests/database-upload.spec.ts",
+                    "column": 34,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ba6f160bf23236ec65d-2d0a7f868a756f1c65a0",
+          "file": "database-upload.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-10T08:42:10.334Z",
+    "duration": 20788.206000000002,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

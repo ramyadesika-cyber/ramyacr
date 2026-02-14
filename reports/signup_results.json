@@ -1,0 +1,122 @@
+[
+  {
+    "index": 1,
+    "name": "Samuel",
+    "baseEmail": "SaSamuel@example.com",
+    "email": "SaSamuel+1765255472907-1@example.com",
+    "password": "12SamuelSa3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:44:39.859Z",
+    "globalIndex": 1
+  },
+  {
+    "index": 2,
+    "name": "Thomas",
+    "baseEmail": "ThThomas@example.com",
+    "email": "ThThomas+1765255472907-1@example.com",
+    "password": "12ThomasTh3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:44:48.598Z",
+    "globalIndex": 2
+  },
+  {
+    "index": 3,
+    "name": "Vincent",
+    "baseEmail": "ViVincent@example.com",
+    "email": "ViVincent+1765255472907-1@example.com",
+    "password": "12VincentVi3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:44:57.511Z",
+    "globalIndex": 3
+  },
+  {
+    "index": 4,
+    "name": "William",
+    "baseEmail": "WiWilliam@example.com",
+    "email": "WiWilliam+1765255472907-1@example.com",
+    "password": "12WilliamWi3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:45:10.229Z",
+    "globalIndex": 4
+  },
+  {
+    "index": 5,
+    "name": "Xavier",
+    "baseEmail": "XaXavier@example.com",
+    "email": "XaXavier+1765255472907-1@example.com",
+    "password": "12XavierXa3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:45:19.092Z",
+    "globalIndex": 5
+  },
+  {
+    "index": 6,
+    "name": "Yusuf",
+    "baseEmail": "YuYusuf@example.com",
+    "email": "YuYusuf+1765255472907-1@example.com",
+    "password": "12YusufYu3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:46:01.674Z",
+    "globalIndex": 6
+  },
+  {
+    "index": 7,
+    "name": "Aaron",
+    "baseEmail": "AaAaron@example.com",
+    "email": "AaAaron+1765255472907-1@example.com",
+    "password": "12AaronAa3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:46:27.706Z",
+    "globalIndex": 7
+  },
+  {
+    "index": 8,
+    "name": "Blake",
+    "baseEmail": "BlBlake@example.com",
+    "email": "BlBlake+1765255472907-1@example.com",
+    "password": "12BlakeBl3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:46:36.896Z",
+    "globalIndex": 8
+  },
+  {
+    "index": 9,
+    "name": "Connor",
+    "baseEmail": "CoConnor@example.com",
+    "email": "CoConnor+1765255472907-1@example.com",
+    "password": "12ConnorCo3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:46:45.257Z",
+    "globalIndex": 9
+  },
+  {
+    "index": 10,
+    "name": "Dylan",
+    "baseEmail": "DyDylan@example.com",
+    "email": "DyDylan+1765255472907-1@example.com",
+    "password": "12DylanDy3",
+    "status": "SUCCESS",
+    "message": "Account Created Successfully",
+    "attempts": 2,
+    "timestamp": "2025-12-09T04:46:54.615Z",
+    "globalIndex": 10
+  }
+]
